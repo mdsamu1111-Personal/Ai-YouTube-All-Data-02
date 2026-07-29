@@ -1,0 +1,8 @@
+{
+  "name": "YouTube AI Education Hub",
+  "description": "Comprehensive indexed video tutorials, step-by-step technical guides, MCP servers, local AI models, autonomous agents, and executable code blueprints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
