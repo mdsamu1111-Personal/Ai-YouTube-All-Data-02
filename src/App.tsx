@@ -9,6 +9,7 @@ import { LandingPage } from './components/LandingPage';
 import { KnowledgeWebNetwork } from './components/KnowledgeWebNetwork';
 import { CreateFromYouTubePage } from './components/CreateFromYouTubePage';
 import { YouTubeToFairEducationPage } from './components/YouTubeToFairEducationPage';
+import { MarkdownHubPage } from './components/MarkdownHubPage';
 import { VideoTutorial, FilterState } from './types';
 import { Sparkles, SearchX, RefreshCw } from 'lucide-react';
 
@@ -259,6 +260,14 @@ export default function App() {
 
       {activeTab === 'fairEducation' && (
         <YouTubeToFairEducationPage
+          videos={enrichedVideos}
+          onSelectVideo={setSelectedVideo}
+          onNavigate={setActiveTab}
+        />
+      )}
+
+      {activeTab === 'markdownHub' && (
+        <MarkdownHubPage
           videos={enrichedVideos}
           onSelectVideo={setSelectedVideo}
           onNavigate={setActiveTab}
